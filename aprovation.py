@@ -1,26 +1,26 @@
-nprovas = int(input('Informe o numero de notas da disciplina: '))
-cod = int(input('Informe o codigo do aluno: '))
-aprovados = int
-reprovados = int
+ntest = int(input('Enter the number of grades for the course: '))
+cod = int(input('Enter the student code: '))
+passed = int
+disapproved = int
 cont = int
-media = int
-nota = int
-soma = int
+average = int
+grade = int
+sum = int
 
-aprovados = 0
-reprovados = 0
+passed = 0
+disapproved = 0
 
 while cod != 0:
-  soma = 0
-  media = 0 
-  for cont in nprovas :
-    print('informe a nota: ')
-    soma = soma + nota
-  media = soma / nprovas
-  if media >= 7:
-      aprovados = aprovados + 1
+  sum = 0
+  average = 0 
+  for cont in ntest :
+    print('enter the grade: ')
+    sum = sum + grade
+  mean = sum / ntest
+  if average >= 7:
+      passed = passed + 1
   else:
-      reprovados = reprovados + 1 
-  input('Informe o codigo do aluno')
-print('o numero de aprovados é: ', aprovados)
-print('o numero de reprovados é: ', reprovados)
+      disapproved  = disapproved  + 1 
+  input('Enter the student code')
+print('The number of passes is: ', passed)
+print('The number of failed students is: ', disapproved )
